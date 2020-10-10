@@ -22,7 +22,7 @@ header {
   background-color: #F5F5F5;
   position: -webkit-sticky; /* Required for Safari */
   position: sticky;
-  top: 28px;
+  top: 25px;
   margin: 0;
   padding: 15px 0;
 }
