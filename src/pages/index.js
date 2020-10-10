@@ -1,22 +1,49 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+// import { func } from "prop-types"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+export const query = graphql`
+  {
+    allDataJson {
+      edges {
+        node {
+          id
+          topic
+          functions {
+            input
+            name
+            output
+          }
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Python Cheatsheet"/>
+      
+      {data.allDataJson.edges.map(({node: item}) => (
+        <div key={item.id}>
+          <p class="topic">{item.topic}</p>
+          <ul>
+            {item.functions.map((func) => (
+              <li>
+                <p class="description">{func.name}</p>
+                <p class="input">{func.input}</p>
+                <p class="output">{func.output}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </Layout>
+  )
+};
 
 export default IndexPage

@@ -1,0 +1,457 @@
+[
+  {
+    "topic": "Math Operations",
+    "functions": [
+      {
+        "name": "Addition",
+        "input": "1+2",
+        "output": "3"
+      },
+      {
+        "name": "Subtraction",
+        "input": "2-1",
+        "output": "-1"
+      },
+      {
+        "name": "Multiplication",
+        "input": "3*4",
+        "output": "12"
+      },
+      {
+        "name": "Division",
+        "input": "5/2",
+        "output": "2.5"
+      },
+      {
+        "name": "Floor",
+        "input": "5//2",
+        "output": "2"
+      },
+      {
+        "name": "Modulo",
+        "input": "5%2",
+        "output": "1"
+      },
+      {
+        "name": "Power",
+        "input": "pow(2,4)",
+        "output": "16"
+      },
+      {
+        "name": "Power (alt.)",
+        "input": "2^4",
+        "output": "16"
+      },
+      {
+        "name": "Square Root",
+        "input": "sqrt(9)",
+        "output": "3"
+      },
+      {
+        "name": "Square Root (alt.)",
+        "input": "9**(0.5)",
+        "output": "3"
+      },
+      {
+        "name": "Absolute Value",
+        "input": "abs(-5)",
+        "output": "5"
+      },
+      {
+        "name": "Round",
+        "input": "round(395, -2)",
+        "output": "400"
+      },
+      {
+        "name": "",
+        "input": "round(3.1415, 2)",
+        "output": "3.14"
+      },
+      {
+        "name": "Floor",
+        "input": "",
+        "output": ""
+      },
+      {
+        "name": "Ceil",
+        "input": "",
+        "output": ""
+      }
+    ]
+  },
+  {
+    "topic": "String Operations",
+    "functions": [
+      {
+        "name": "Cases",
+        "input": "s = \"HeLlO wOrLd\"\ns.upper()",
+        "output": "'HELLO WORLD'"
+      },
+      {
+        "name": "",
+        "input": "s = \"HeLlO wOrLd\"\ns.lower()",
+        "output": "'hello world'"
+      },
+      {
+        "name": "",
+        "input": "s = \"HeLlO wOrLd\"\ns.capitalize()",
+        "output": "'Hello world'"
+      },
+      {
+        "name": "",
+        "input": "s = \"HeLlO wOrLd\"\ns.title()",
+        "output": "'Hello World'"
+      },
+      {
+        "name": "",
+        "input": "s = \"HeLlO wOrLd\"\ns.swapcase()",
+        "output": "'hElLo WoRlD'"
+      },
+      {
+        "name": "String Length",
+        "input": "s = \"HeLlO wOrLd\"\nlen(s)",
+        "output": "11"
+      },
+      {
+        "name": "Character Count",
+        "input": "s = \"HeLlO wOrLd\"\ns.count('L')",
+        "output": "2"
+      },
+      {
+        "name": "String Position",
+        "input": "s = \"HeLlO wOrLd\"\ns.find('O')",
+        "output": "4"
+      },
+      {
+        "name": "",
+        "input": "s = \"HeLlO wOrLd\"\ns.find('O', 6, 11)",
+        "output": "7"
+      },
+      {
+        "name": "Replace / Substitute",
+        "input": "s = \"HeLlO wOrLd\"\ns.replace('HeLlO', 'Goodbye')",
+        "output": "'Goodbye wOrLd'"
+      },
+      {
+        "name": "Split",
+        "input": "s = \"HeLlO wOrLd\"\ns.split('O')",
+        "output": "['HeLl', ' w', 'rLd']"
+      },
+      {
+        "name": "Split (by whitespace)",
+        "input": "s = \"HeLlO wOrLd\"\ns.split()",
+        "output": "['HeLlO','wOrLd']"
+      },
+      {
+        "name": "Partition",
+        "input": "s = \"HeLlO wOrLd\"\ns.partition('O')",
+        "output": "('HeLl', 'O', ' wOrLd')"
+      },
+      {
+        "name": "",
+        "input": "s = \"HeLlO wOrLd\"\ns.partition('z')",
+        "output": "('HeLlO wOrLd', '', '')"
+      },
+      {
+        "name": "Concatenation",
+        "input": "s1 = \"Hello\"\ns2 = \"World\"\ns1 + \" \" + s2",
+        "output": "'Hello World'"
+      },
+      {
+        "name": "",
+        "input": "s1 = \"Hello\"\ns2 = \"World\"\n\" \".join([s1, s2])",
+        "output": "'Hello World'"
+      },
+      {
+        "name": "Trim",
+        "input": "s3 = \"    lots of spaces    \"\ns3.strip()",
+        "output": "'lots of spaces'"
+      },
+      {
+        "name": "Loop",
+        "input": "s4 = \"Print me\"\nfor letter in s:\n    print(letter)",
+        "output": "P\nr\ni\nn\nt\n \nm\ne"
+      },
+      {
+        "name": "Logical",
+        "input": "s.isalnum()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.isalpha()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.islower()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.isupper()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.isdecimal()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.isdigit()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.isnumeric()",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "s.isspace()",
+        "output": ""
+      }
+    ]
+  },
+  {
+    "topic": "List",
+    "functions": [
+      {
+        "name": "Manipulation",
+        "input": "l.append()",
+        "output": ""
+      },
+      {
+        "name": "Manipulation",
+        "input": "l.extend()",
+        "output": ""
+      },
+      {
+        "name": "Manipulation",
+        "input": "l.insert()",
+        "output": "insert element into index position in list"
+      },
+      {
+        "name": "Manipulation",
+        "input": "l.pop()",
+        "output": "return popped element (last element in list)"
+      },
+      {
+        "name": "Manipulation",
+        "input": "l.pop(2)",
+        "output": "return popped element (element at index 2 in list)"
+      },
+      {
+        "name": "Manipulation",
+        "input": "l.remove()",
+        "output": "remove first occurrence of element in list"
+      },
+      {
+        "name": "Search",
+        "input": "l.count(elem)",
+        "output": "return frequency of element in list"
+      },
+      {
+        "name": "Search",
+        "input": "l.index(elem)",
+        "output": "return the index position of element in list"
+      },
+      {
+        "name": "Sort",
+        "input": "l.reverse()",
+        "output": "return the list in reverse order"
+      },
+      {
+        "name": "Sort",
+        "input": "l.sort()",
+        "output": "sort list in place"
+      },
+      {
+        "name": "Sort",
+        "input": "x = sorted(l)",
+        "output": "return sorted list as variable x"
+      },
+      {
+        "name": "Math",
+        "input": "min(l)",
+        "output": "return min element in list"
+      },
+      {
+        "name": "Math",
+        "input": "max(l)",
+        "output": "return miax element in list"
+      },
+      {
+        "name": "Math",
+        "input": "x in list",
+        "output": ""
+      },
+      {
+        "name": "Math",
+        "input": "x not in list",
+        "output": ""
+      },
+      {
+        "name": "Functions",
+        "input": "list(zip(list1, list2))",
+        "output": ""
+      },
+      {
+        "name": "Functions",
+        "input": "enumerate('abcde')",
+        "output": ""
+      },
+      {
+        "name": "Loop",
+        "input": "for item in list",
+        "output": ""
+      },
+      {
+        "name": "List Comprehension",
+        "input": "[x for x in range(11) if x % 2 == 0]",
+        "output": "[0,2,4,6,8,10]"
+      },
+      {
+        "name": "",
+        "input": "celsius = [0,10,20.1,34.5]\nfahrenheit = [((9/5)*temp + 32) for temp in celsius]",
+        "output": ""
+      }
+    ]
+  },
+  {
+    "topic": "Dictionary",
+    "functions": [
+      {
+        "name": "Access",
+        "input": "d.keys()",
+        "output": ""
+      },
+      {
+        "name": "Access",
+        "input": "d.values()",
+        "output": ""
+      },
+      {
+        "name": "Access",
+        "input": "d.items()",
+        "output": ""
+      },
+      {
+        "name": "Access",
+        "input": "d['key1']",
+        "output": ""
+      },
+      {
+        "name": "Loop",
+        "input": "for k,v in d.items()",
+        "output": ""
+      }
+    ]
+  },
+  {
+    "topic": "Tuple",
+    "functions": [
+      {
+        "name": "",
+        "input": "index(elem)",
+        "output": ""
+      },
+      {
+        "name": "",
+        "input": "count(elem)",
+        "output": ""
+      },
+      {
+        "name": "Loop",
+        "input": "for (t1,t2) in list",
+        "output": ""
+      }
+    ]
+  },
+  {
+    "topic": "Sets",
+    "functions": [
+      {
+        "name": "Manipulation",
+        "input": "set(list)",
+        "output": "converts list to set"
+      },
+      {
+        "name": "Manipulation",
+        "input": "x.add(elem)",
+        "output": "add elem to set x"
+      },
+      {
+        "name": "Manipulation",
+        "input": "x.discard(elem)",
+        "output": "remove elem from set x"
+      },
+      {
+        "name": "Manipulation",
+        "input": "x.clear()",
+        "output": "return empty set"
+      },
+      {
+        "name": "Manipulation",
+        "input": "x.copy()",
+        "output": "return copy of set"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.union(set2)",
+        "output": "return all elements of both sets"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.difference(set2)",
+        "output": "return elements only found in set1"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.intersection(set2)",
+        "output": "return elements found in both sets"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.symmetric_difference(set2)",
+        "output": "return elements not in both sets"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.update(set2)",
+        "output": "replaces set1 with all elements of both sets"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.difference_update(set2)",
+        "output": "replaces set1 with elements only found in set1"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.intersection_update(set2)",
+        "output": "replaces set1 with elements found in both sets"
+      },
+      {
+        "name": "Comparison",
+        "input": "set1.symmetric_update(set2)",
+        "output": "replaces set1 with elements not found in both sets"
+      },
+      {
+        "name": "Checks",
+        "input": "set1.isdisjoint(set2)",
+        "output": "return True if null intersections"
+      },
+      {
+        "name": "Checks",
+        "input": "set1.issubset(set2)",
+        "output": "return True if set1 in set2"
+      },
+      {
+        "name": "Checks",
+        "input": "set1.issuperset(set2)",
+        "output": "return True if set1 contains all elements in set2"
+      }
+    ]
+  }
+]

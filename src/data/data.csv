@@ -1,0 +1,90 @@
+﻿id,category,name,input,output
+1,Math Operations,Addition,1+2,3
+2,Math Operations,Subtraction,2-Jan,-1
+3,Math Operations,Multiplication,3*4,12
+4,Math Operations,Division,2-May,2.5
+5,Math Operations,Floor,5//2,2
+6,Math Operations,Modulo,5%2,1
+7,Math Operations,Power,"pow(2,4)",16
+8,Math Operations,Power,2.00E+04,16
+9,Math Operations,Square Root,sqrt(9),3
+10,Math Operations,Square Root,9**(0.5),3
+11,Math Operations,Absolute Value,abs(-5),5
+12,Math Operations,Round,"round(395, -2)",400
+13,Math Operations,Round,"round(3.1415, 2)",3.14
+14,Math Operations,Floor,,
+15,Math Operations,Ceil,,
+16,String Operations,Cases,s.upper(),'HELLO WORLD'
+17,String Operations,Cases,s.lower(),'hello world'
+18,String Operations,Cases,s.capitalize(),'Hello world'
+19,String Operations,Cases,s.title(),'Hello World'
+20,String Operations,Cases,s.swapcase(),'hElLo WoRlD'
+21,String Operations,Search,len(s),11
+22,String Operations,Search,s.count('L'),2
+23,String Operations,Search,s.find('O'),4
+24,String Operations,Search,"s.find('O', 6, 11)",7
+25,String Operations,Manipulation,"s.replace('HeLlO', 'Goodbye')",'Goodbye wOrLd'
+26,String Operations,Manipulation,s.split(),"['HeLlO','wOrLd']"
+27,String Operations,Manipulation,s.split('O'),"['HeLl', ' w', 'rLd']"
+28,String Operations,Manipulation,s.partition('O'),"('HeLl', 'O', ' wOrLd')"
+29,String Operations,Manipulation,s.partition('z'),"('HeLlO wOrLd', '', '')"
+30,String Operations,Manipulation,"s1 = ""Hello""
+s2 = ""World""
+s1 + "" "" + s2",'Hello World'
+31,String Operations,Manipulation,""" "".join([s1, s2])",'Hello World'
+32,String Operations,Manipulation,"s3 = ""    lots of spaces    ""
+s3.strip()",'lots of spaces'
+33,String Operations,Loop,for letter in 'This is a string.',
+34,String Operations,Checks,s.isalnum(),
+35,String Operations,Checks,s.isalpha(),
+36,String Operations,Checks,s.islower(),
+37,String Operations,Checks,s.isupper(),
+38,String Operations,Checks,s.isdecimal(),
+39,String Operations,Checks,s.isdigit(),
+40,String Operations,Checks,s.isnumeric(),
+41,String Operations,Checks,s.isspace(),
+42,List,Manipulation,l.append(),
+43,List,Manipulation,l.extend(),
+44,List,Manipulation,l.insert(),insert element into index position in list
+45,List,Manipulation,l.pop(),return popped element (last element in list)
+46,List,Manipulation,l.pop(2),return popped element (element at index 2 in list)
+47,List,Manipulation,l.remove(),remove first occurrence of element in list
+48,List,Search,l.count(elem),return frequency of element in list
+49,List,Search,l.index(elem),return the index position of element in list
+50,List,Sort,l.reverse(),return the list in reverse order
+51,List,Sort,l.sort(),sort list in place
+52,List,Sort,x = sorted(l),return sorted list as variable x
+53,List,Math,min(l),return min element in list
+54,List,Math,max(l),return miax element in list
+55,List,Math,x in list,
+56,List,Math,x not in list,
+57,List,Functions,"list(zip(list1, list2))",
+58,List,Functions,enumerate('abcde'),
+59,List,Loop,for item in list,
+60,List,List Comprehension,[x for x in range(11) if x % 2 == 0],"[0, 2, 4, 6, 8, 10]"
+61,List,,"celsius = [0,10,20.1,34.5]
+fahrenheit = [((9/5)*temp + 32) for temp in celsius]",
+62,Dictionary,Access,d.keys(),
+63,Dictionary,Access,d.values(),
+64,Dictionary,Access,d.items(),
+65,Dictionary,Access,d['key1'],
+66,Dictionary,Loop,"for k,v in d.items()",
+67,Tuple,,index(elem),
+68,Tuple,,count(elem),
+69,Tuple,Loop,"for (t1,t2) in list",
+70,Sets,Manipulation,set(list),converts list to set
+71,Sets,Manipulation,x.add(elem),add elem to set x
+72,Sets,Manipulation,x.discard(elem),remove elem from set x
+73,Sets,Manipulation,x.clear(),return empty set
+74,Sets,Manipulation,x.copy(),return copy of set
+75,Sets,Comparison,set1.union(set2),return all elements of both sets
+76,Sets,Comparison,set1.difference(set2),return elements only found in set1
+77,Sets,Comparison,set1.intersection(set2),return elements found in both sets
+78,Sets,Comparison,set1.symmetric_difference(set2),return elements not in both sets
+79,Sets,Comparison,set1.update(set2),replaces set1 with all elements of both sets
+80,Sets,Comparison,set1.difference_update(set2),replaces set1 with elements only found in set1
+81,Sets,Comparison,set1.intersection_update(set2),replaces set1 with elements found in both sets
+82,Sets,Comparison,set1.symmetric_update(set2),replaces set1 with elements not found in both sets
+83,Sets,Checks,set1.isdisjoint(set2),return True if null intersections
+84,Sets,Checks,set1.issubset(set2),return True if set1 in set2
+85,Sets,Checks,set1.issuperset(set2),return True if set1 contains all elements in set2
