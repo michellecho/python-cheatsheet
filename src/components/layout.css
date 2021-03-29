@@ -33,59 +33,75 @@ ul {
 
 li {
   display: flex;
-  align-items: center;
-  padding: 5px 0px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
   margin: 0 auto;
-}
-
-li p {
-  width: 40%;
-  margin: 0px 45px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  white-space: pre-wrap;
+  padding: 10px 0px;
 }
 
 .description {
-  width: 20%;
+  width: 150px;
+  padding: 1em 0.5em;
 }
 
-.input {
-  background-color: #EBEBEB;
+.code-block {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
 }
 
-.input::before {
-  content: "In:\00a0\00a0";
-  margin-left: -36px;
+p[class*="-head"] {
+  width: fit-content;
+  margin: 0px;
+  padding: 1em 0.5em;
+}
+
+p[class*="-code"] {
+  width: inherit;
+  margin: 0px;
+}
+
+pre[class*="language-"] {
+  background: none !important;
+  margin: 0px !important;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	background: none !important;
+}
+
+.input-head {
   color: #0F37FF;
 }
 
-.output {
-  background-color: #FFFFFF;
+.input-code {
+  background-color: #EBEBEB;
 }
 
-.output::before {
-  content: "Out:\00a0\00a0";
-  margin-left: -43px;
+.output-head {
   color: #F03030;
 }
 
-@media all and (max-width: 1024px) {
-  li {
-    display: block;
-    width: 80%;
-    min-width: 350px;
-    max-width: 450px;
-  }
+.output-code {
+  background-color: #FFFFFF;
+}
 
-  li p {
-    width: inherit;
-    border-radius: 0px;
-    margin: 5px 45px;
+@media all and (max-width: 1200px) {
+  li {
+    flex-direction: column;
+    width: fit-content;
+  }
+  
+  .code-block {
+    margin: 0.5em 0em;
   }
 
   .description {
-    margin: 0px;
     width: inherit;
   }
 }

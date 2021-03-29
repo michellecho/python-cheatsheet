@@ -4,78 +4,88 @@
     "functions": [
       {
         "name": "Addition",
-        "input": "1+2",
+        "input": "print(1+2)",
         "output": "3"
       },
       {
         "name": "Subtraction",
-        "input": "2-1",
+        "input": "print(1-2)",
         "output": "-1"
       },
       {
         "name": "Multiplication",
-        "input": "3*4",
+        "input": "print(3*4)",
         "output": "12"
       },
       {
         "name": "Division",
-        "input": "5/2",
+        "input": "print(5/2)",
         "output": "2.5"
       },
       {
         "name": "Floor",
-        "input": "5//2",
+        "input": "print(5//2)",
         "output": "2"
       },
       {
         "name": "Modulo",
-        "input": "5%2",
+        "input": "print(5%2)",
         "output": "1"
       },
       {
         "name": "Power",
-        "input": "pow(2,4)",
+        "input": "print(pow(2,4))",
         "output": "16"
       },
       {
         "name": "Power (alt.)",
-        "input": "2^4",
+        "input": "print(2**4)",
         "output": "16"
       },
       {
         "name": "Square Root",
-        "input": "sqrt(9)",
-        "output": "3"
+        "input": "print(9**(0.5))",
+        "output": "3.0"
       },
       {
         "name": "Square Root (alt.)",
-        "input": "9**(0.5)",
-        "output": "3"
+        "input": "import math\nprint(math.sqrt(9))",
+        "output": "3.0"
       },
       {
         "name": "Absolute Value",
-        "input": "abs(-5)",
+        "input": "print(abs(-5))",
         "output": "5"
       },
       {
         "name": "Round",
-        "input": "round(395, -2)",
+        "input": "print(round(395, -2))",
         "output": "400"
       },
       {
         "name": "",
-        "input": "round(3.1415, 2)",
+        "input": "print(round(3.1415, 2))",
         "output": "3.14"
       },
       {
         "name": "Floor",
-        "input": "",
-        "output": ""
+        "input": "import math\nprint(math.floor(5.6))",
+        "output": "5"
+      },
+      {
+        "name": "",
+        "input": "import math\nprint(math.floor(-5.6))",
+        "output": "-6"
       },
       {
         "name": "Ceil",
-        "input": "",
-        "output": ""
+        "input": "import math\nprint(math.ceil(5.6))",
+        "output": "6"
+      },
+      {
+        "name": "",
+        "input": "import math\nprint(math.ceil(-5.6))",
+        "output": "-5"
       }
     ]
   },
@@ -84,88 +94,53 @@
     "functions": [
       {
         "name": "Cases",
-        "input": "s = \"HeLlO wOrLd\"\ns.upper()",
-        "output": "'HELLO WORLD'"
+        "input": "s = \"HeLlO wOrLd\"\nprint(s.upper())\nprint(s.lower())\nprint(s.capitalize())\nprint(s.title())\nprint(s.swapcase())",
+        "output": "HELLO WORLD\nhello world\nHello world\nHello World\nhElLo WoRlD"
       },
       {
-        "name": "",
-        "input": "s = \"HeLlO wOrLd\"\ns.lower()",
-        "output": "'hello world'"
-      },
-      {
-        "name": "",
-        "input": "s = \"HeLlO wOrLd\"\ns.capitalize()",
-        "output": "'Hello world'"
-      },
-      {
-        "name": "",
-        "input": "s = \"HeLlO wOrLd\"\ns.title()",
-        "output": "'Hello World'"
-      },
-      {
-        "name": "",
-        "input": "s = \"HeLlO wOrLd\"\ns.swapcase()",
-        "output": "'hElLo WoRlD'"
-      },
-      {
-        "name": "String Length",
-        "input": "s = \"HeLlO wOrLd\"\nlen(s)",
+        "name": "Length",
+        "input": "s = \"HeLlO wOrLd\"\nprint(len(s))",
         "output": "11"
       },
       {
-        "name": "Character Count",
-        "input": "s = \"HeLlO wOrLd\"\ns.count('L')",
+        "name": "Count",
+        "input": "s = \"HeLlO wOrLd\"\nprint(s.count('L'))",
         "output": "2"
       },
       {
-        "name": "String Position",
-        "input": "s = \"HeLlO wOrLd\"\ns.find('O')",
+        "name": "Find",
+        "input": "s = \"HeLlO wOrLd\"\nprint(s.find('O'))",
         "output": "4"
       },
       {
         "name": "",
-        "input": "s = \"HeLlO wOrLd\"\ns.find('O', 6, 11)",
+        "input": "s = \"HeLlO wOrLd\"\nprint(s.find('O', 6, 11))",
         "output": "7"
       },
       {
         "name": "Replace / Substitute",
-        "input": "s = \"HeLlO wOrLd\"\ns.replace('HeLlO', 'Goodbye')",
-        "output": "'Goodbye wOrLd'"
+        "input": "s = \"HeLlO wOrLd\"\ns = s.replace('HeLlO', 'Goodbye')\nprint(s)",
+        "output": "Goodbye wOrLd"
       },
       {
         "name": "Split",
-        "input": "s = \"HeLlO wOrLd\"\ns.split('O')",
-        "output": "['HeLl', ' w', 'rLd']"
-      },
-      {
-        "name": "Split (by whitespace)",
-        "input": "s = \"HeLlO wOrLd\"\ns.split()",
-        "output": "['HeLlO','wOrLd']"
+        "input": "s = \"HeLlO wOrLd\"\nprint(s.split('O'))\nprint(s.split())",
+        "output": "['HeLl', ' w', 'rLd']\n['HeLlO','wOrLd']"
       },
       {
         "name": "Partition",
-        "input": "s = \"HeLlO wOrLd\"\ns.partition('O')",
-        "output": "('HeLl', 'O', ' wOrLd')"
-      },
-      {
-        "name": "",
-        "input": "s = \"HeLlO wOrLd\"\ns.partition('z')",
-        "output": "('HeLlO wOrLd', '', '')"
+        "input": "s = \"HeLlO wOrLd\"\nprint(s.partition('O'))\nprint(s.partition('z'))",
+        "output": "('HeLl', 'O', ' wOrLd')\n('HeLlO wOrLd', '', '')"
       },
       {
         "name": "Concatenation",
-        "input": "s1 = \"Hello\"\ns2 = \"World\"\ns1 + \" \" + s2",
-        "output": "'Hello World'"
-      },
-      {
-        "name": "",
-        "input": "s1 = \"Hello\"\ns2 = \"World\"\n\" \".join([s1, s2])",
-        "output": "'Hello World'"
+        "input": "s1 = \"Hello\"\ns2 = \"World\"\nprint(s1 + \" \" + s2)\nprint(\" \".join([s1, s2]))",
+        "output": "Hello World\nHello World"
       },
       {
         "name": "Trim",
-        "input": "s3 = \"    lots of spaces    \"\ns3.strip()",
-        "output": "'lots of spaces'"
+        "input": "s3 = \"    lots of spaces    \"\nprint(s3.strip())",
+        "output": "lots of spaces"
       },
       {
         "name": "Loop",
@@ -173,284 +148,349 @@
         "output": "P\nr\ni\nn\nt\n \nm\ne"
       },
       {
-        "name": "Logical",
-        "input": "s.isalnum()",
-        "output": ""
+        "name": "Logical:\nString",
+        "input": "s = \"hello\"\nprint(s.isalnum())\nprint(s.isalpha())",
+        "output": "True\nTrue"
       },
       {
         "name": "",
-        "input": "s.isalpha()",
-        "output": ""
+        "input": "s = \"Hello123\"\nprint(s.isalnum())\nprint(s.isalpha())",
+        "output": "True\nFalse"
       },
       {
         "name": "",
-        "input": "s.islower()",
-        "output": ""
+        "input": "s = \"Hello World\"\nprint(s.isalnum())\nprint(s.isalpha())",
+        "output": "False\nFalse"
       },
       {
         "name": "",
-        "input": "s.isupper()",
-        "output": ""
+        "input": "s = \"hello world 123!\"\nprint(s.islower())\nprint(s.isupper())",
+        "output": "True\nFalse"
       },
       {
         "name": "",
-        "input": "s.isdecimal()",
-        "output": ""
+        "input": "s = \"HELLO WORLD 123!\"\nprint(s.islower())\nprint(s.isupper())",
+        "output": "False\nTrue"
       },
       {
         "name": "",
-        "input": "s.isdigit()",
-        "output": ""
+        "input": "s = \"HELLO world 123!\"\nprint(s.islower())\nprint(s.isupper())",
+        "output": "False\nFalse"
+      },
+      {
+        "name": "Logical:\nNumeric",
+        "input": "s = \"123456\"\nprint(s.isnumeric())\nprint(s.isdigit())\nprint(s.isdecimal())",
+        "output": "True\nTrue\nTrue"
       },
       {
         "name": "",
-        "input": "s.isnumeric()",
-        "output": ""
+        "input": "s = \"\\u00B2\" #\\u00B2 = ² (superscript)\nprint(s.isnumeric())\nprint(s.isdigit())\nprint(s.isdecimal())",
+        "output": "True\nTrue\nFalse"
       },
       {
         "name": "",
-        "input": "s.isspace()",
-        "output": ""
+        "input": "s = \"\\u00BD\" #\\u00BD = ½ (fraction)\nprint(s.isnumeric())\nprint(s.isdigit())\nprint(s.isdecimal())",
+        "output": "True\nFalse\nFalse"
+      },
+      {
+        "name": "",
+        "input": "s = \"Hello123\"\nprint(s.isnumeric())\nprint(s.isdigit())\nprint(s.isdecimal())",
+        "output": "False\nFalse\nFalse"
       }
     ]
   },
   {
-    "topic": "List",
+    "topic": "List Operations",
     "functions": [
       {
-        "name": "Manipulation",
-        "input": "l.append()",
-        "output": ""
+        "name": "Append",
+        "input": "lst = [1, 2, 3]\nlst.append(['a', 'b', 'c'])\nprint(lst)",
+        "output": "[1, 2, 3, ['a', 'b', 'c']]"
       },
       {
-        "name": "Manipulation",
-        "input": "l.extend()",
-        "output": ""
+        "name": "Extend",
+        "input": "lst = [1, 2, 3]\nlst.extend(['a', 'b', 'c'])\nprint(lst)",
+        "output": "[1, 2, 3, 'a', 'b', 'c']"
       },
       {
-        "name": "Manipulation",
-        "input": "l.insert()",
-        "output": "insert element into index position in list"
+        "name": "Insert",
+        "input": "lst = ['a', 'b', 'c']\nlst.insert(2, 'd')\nprint(lst)",
+        "output": "#insert element into index position in list\n['a', 'b', 'd', 'c']"
       },
       {
-        "name": "Manipulation",
-        "input": "l.pop()",
-        "output": "return popped element (last element in list)"
+        "name": "Remove",
+        "input": "lst = ['a', 'b', 'd', 'c']\nlst.remove('d')\nprint(lst)",
+        "output": "#remove element in list\n['a', 'b', 'c']"
       },
       {
-        "name": "Manipulation",
-        "input": "l.pop(2)",
-        "output": "return popped element (element at index 2 in list)"
+        "name": "",
+        "input": "lst = ['a', 'b', 'd', 'b', 'c']\nlst.remove('b')\nprint(lst)",
+        "output": "#remove first occurrence of element in list\n['a', 'd', 'b', 'c']"
       },
       {
-        "name": "Manipulation",
-        "input": "l.remove()",
-        "output": "remove first occurrence of element in list"
+        "name": "Pop",
+        "input": "lst = ['a', 'b', 'd', 'c']\nelement=lst.pop()\nprint(element)\nprint(lst)",
+        "output": "#return last element in list\nc\n['a', 'b', 'd']"
       },
       {
-        "name": "Search",
-        "input": "l.count(elem)",
-        "output": "return frequency of element in list"
+        "name": "",
+        "input": "lst = ['a', 'b', 'd', 'c']\nelement=lst.pop(2)\nprint(element)\nprint(lst)",
+        "output": "#return element at index 2\nd\n['a', 'b', 'c']"
       },
       {
-        "name": "Search",
-        "input": "l.index(elem)",
-        "output": "return the index position of element in list"
+        "name": "Copy",
+        "input": "lst = ['a', 'b', 'd', 'c']\nnew_lst = lst.copy()\nprint(new_lst)",
+        "output": "#return copy of list\n['a', 'b', 'd', 'c']"
+      },
+      {
+        "name": "Clear",
+        "input": "lst = ['a', 'b', 'd', 'c']\nlst.clear()\nprint(lst)",
+        "output": "#removes everything in list\n[]"
+      },
+      {
+        "name": "Count",
+        "input": "lst = ['a', 'b', 'd', 'b', 'c']\nprint(lst.count('b'))\nprint(lst.count('e'))",
+        "output": "#return frequency of element in list\n2\n0"
+      },
+      {
+        "name": "Index",
+        "input": "lst = ['a', 'b', 'd', 'b', 'c']\nprint(lst.index('b'))\nprint(lst.index('e'))",
+        "output": "#return the index position of element in list\n1\nValueError: 'e' is not in list"
+      },
+      {
+        "name": "Reverse",
+        "input": "lst = [3, 6, 2, 4, 0]\nnew_lst = lst[::-1]\nprint(new_lst)",
+        "output": "#return the list in reverse order\n[0, 4, 2, 6, 3]"
+      },
+      {
+        "name": "",
+        "input": "lst = [3, 6, 2, 4, 0]\nlst.reverse()\nprint(lst)",
+        "output": "#return the list in reverse order\n[0, 4, 2, 6, 3]"
       },
       {
         "name": "Sort",
-        "input": "l.reverse()",
-        "output": "return the list in reverse order"
+        "input": "lst = [3, 6, 2, 4, 0]\nlst.sort()\nprint(lst)",
+        "output": "#sort list in place\n[0, 2, 3, 4, 6]"
       },
       {
-        "name": "Sort",
-        "input": "l.sort()",
-        "output": "sort list in place"
+        "name": "",
+        "input": "lst = [5, 10, 3, -3, 0]\nnew_lst = sorted(lst)\nprint(new_lst)",
+        "output": "#return sorted list as variable new_lst\n[-3, 0, 3, 5, 10]"
       },
       {
-        "name": "Sort",
-        "input": "x = sorted(l)",
-        "output": "return sorted list as variable x"
+        "name": "Sort (Descending)",
+        "input": "lst = [3, 6, 2, 4, 0]\nlst.sort(reverse=True)\nprint(lst)",
+        "output": "#sort list in place\n[6, 4, 3, 2, 0]"
       },
       {
-        "name": "Math",
-        "input": "min(l)",
-        "output": "return min element in list"
+        "name": "",
+        "input": "lst = [5, 10, 3, -3, 0]\nnew_lst = sorted(lst, reverse=True)\nprint(new_lst)",
+        "output": "#return sorted list as variable new_lst\n[10, 5, 3, 0, -3]"
       },
       {
-        "name": "Math",
-        "input": "max(l)",
-        "output": "return miax element in list"
+        "name": "Min",
+        "input": "lst = [5, 10, 3, -3, 0]\nprint(min(lst))",
+        "output": "#return min element in list\n-3"
       },
       {
-        "name": "Math",
-        "input": "x in list",
-        "output": ""
+        "name": "Max",
+        "input": "lst = [5, 10, 3, -3, 0]\nprint(max(lst))",
+        "output": "#return max element in list\n10"
       },
       {
-        "name": "Math",
-        "input": "x not in list",
-        "output": ""
+        "name": "Logical",
+        "input": "lst = ['a', 'b', 'c', 'd', 'e']\nprint('c' in lst)\nprint('x' in lst)",
+        "output": "#is an element in the list\nTrue\nFalse"
       },
       {
-        "name": "Functions",
-        "input": "list(zip(list1, list2))",
-        "output": ""
+        "name": "",
+        "input": "lst = ['a', 'b', 'c', 'd', 'e']\nprint('c' not in lst)\nprint('x' not in lst)",
+        "output": "#is an element NOT in the list\nFalse\nTrue"
       },
       {
-        "name": "Functions",
-        "input": "enumerate('abcde')",
-        "output": ""
+        "name": "Zip",
+        "input": "lst1 = [0, 1, 2, 3, 4]\nlst2 = ['a', 'b', 'c', 'd', 'e']\nprint(list(zip(lst1, lst2)))",
+        "output": "[(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd'), (4, 'e')]"
       },
       {
-        "name": "Loop",
-        "input": "for item in list",
-        "output": ""
+        "name": "Enumerate",
+        "input": "for item in enumerate('abcde'):\n    print(item)",
+        "output": "(0, 'a')\n(1, 'b')\n(2, 'c')\n(3, 'd')\n(4, 'e')"
+      },
+      {
+        "name": "",
+        "input": "for idx, item in enumerate('abcde'):\n    print(idx, item)",
+        "output": "0 a\n1 b\n2 c\n3 d\n4 e"
       },
       {
         "name": "List Comprehension",
-        "input": "[x for x in range(11) if x % 2 == 0]",
-        "output": "[0,2,4,6,8,10]"
+        "input": "lst = [x for x in range(11) if x % 2 == 0]\nprint(lst)",
+        "output": "[0, 2, 4, 6, 8, 10]"
       },
       {
         "name": "",
-        "input": "celsius = [0,10,20.1,34.5]\nfahrenheit = [((9/5)*temp + 32) for temp in celsius]",
-        "output": ""
+        "input": "celsius = [0, 15, 23.6, 34.5]\nfahrenheit = [((9/5)*temp + 32) for temp in celsius]\nprint(fahrenheit)",
+        "output": "[32.0, 59.0, 74.48, 94.1]"
       }
     ]
   },
   {
-    "topic": "Dictionary",
+    "topic": "Dictionary Operations",
     "functions": [
       {
         "name": "Access",
-        "input": "d.keys()",
-        "output": ""
+        "input": "d = {'city': 'Madrid', 'country': 'Spain'}\nprint(d.keys())\nprint(d.values())\nprint(d.items())",
+        "output": "dict_keys(['city', 'country'])\ndict_values(['Madrid', 'Spain'])\ndict_items([('city', 'Madrid'), ('country', 'Spain')])"
       },
       {
-        "name": "Access",
-        "input": "d.values()",
-        "output": ""
+        "name": "",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain'}\nprint(d['city'])\nprint(d.get('country'))",
+        "output": "Madrid\nSpain"
       },
       {
-        "name": "Access",
-        "input": "d.items()",
-        "output": ""
+        "name": "Add",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain'}\nd['code'] = 'ESP'\nprint(d)",
+        "output": "{'city': 'Madrid', 'country': 'Spain', 'code': 'ESP'}"
       },
       {
-        "name": "Access",
-        "input": "d['key1']",
-        "output": ""
+        "name": "Edit",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain'}\nd['city'] = 'Barcelona'\nprint(d)",
+        "output": "{'city': 'Barcelona', 'country': 'Spain'}"
+      },
+      {
+        "name": "Pop",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain', 'code': 'ESP'}\nprint(d.pop('country'))\nprint(d)",
+        "output": "Spain\n{'city': 'Madrid', 'code': 'ESP'}"
+      },
+      {
+        "name": "Popitem",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain', 'code': 'ESP'}\nprint(d.popitem())\nprint(d)",
+        "output": "('code', 'ESP')\n{'city': 'Madrid', 'country': 'Spain'}"
+      },
+      {
+        "name": "Copy",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain'}\nnew_dict = d.copy()\nprint(new_dict)",
+        "output": "#return copy of dictionary\n{'city': 'Madrid', 'country': 'Spain'}"
+      },
+      {
+        "name": "Clear",
+        "input": "d = {'city': 'Madrid', 'country': 'Spain'}\nd.clear()\nprint(d)",
+        "output": "#removes everything in dictionary\n{}"
       },
       {
         "name": "Loop",
-        "input": "for k,v in d.items()",
-        "output": ""
+        "input": "d = {'city': 'Madrid', 'country': 'Spain', 'code': 'ESP'}\nfor key, val in d.items():\n    print(key + \": \" + val)",
+        "output": "city: Madrid\ncountry: Spain\ncode: ESP"
       }
     ]
   },
   {
-    "topic": "Tuple",
+    "topic": "Tuple Operations",
     "functions": [
       {
-        "name": "",
-        "input": "index(elem)",
-        "output": ""
+        "name": "Index",
+        "input": "tup = ('a', 'b', 'd', 'b', 'c')\nprint(tup.index('b'))\nprint(tup.index('e'))",
+        "output": "1\nValueError: tuple.index(x): x not in tuple"
       },
       {
-        "name": "",
-        "input": "count(elem)",
-        "output": ""
+        "name": "Count",
+        "input": "tup = ('a', 'b', 'd', 'b', 'c')\nprint(tup.count('b'))\nprint(tup.count('e'))",
+        "output": "2\n0"
       },
       {
         "name": "Loop",
-        "input": "for (t1,t2) in list",
-        "output": ""
+        "input": "tup = ('a', 'b', 'd', 'b', 'c')\nfor t in tup:\n    print(t)",
+        "output": "a\nb\nd\nb\nc"
       }
     ]
   },
   {
-    "topic": "Sets",
+    "topic": "Set Operations",
     "functions": [
       {
-        "name": "Manipulation",
-        "input": "set(list)",
-        "output": "converts list to set"
+        "name": "Initialize",
+        "input": "x = set([1, 3, 5, 7])\nprint(x)",
+        "output": "{1, 3, 5, 7}"
       },
       {
-        "name": "Manipulation",
-        "input": "x.add(elem)",
-        "output": "add elem to set x"
+        "name": "Add",
+        "input": "x = {1, 3, 5, 7}\nx.add(9)\nprint(x)\nx.add(3)\nprint(x)",
+        "output": "#insert an element to set\n{1, 3, 5, 7, 9}\n{1, 3, 5, 7, 9}"
       },
       {
-        "name": "Manipulation",
-        "input": "x.discard(elem)",
-        "output": "remove elem from set x"
+        "name": "Discard",
+        "input": "x = {1, 3, 5, 7}\nx.discard(3)\nprint(x)\nx.discard(2)\nprint(x)",
+        "output": "#no error if element does not exist\n{1, 5, 7}\n{1, 5, 7}"
       },
       {
-        "name": "Manipulation",
-        "input": "x.clear()",
-        "output": "return empty set"
+        "name": "Remove",
+        "input": "x = {1, 3, 5, 7}\nx.remove(3)\nprint(x)\nx.remove(2)\nprint(x)",
+        "output": "#error if element does not exist\n{1, 5, 7}\nKeyError: 2"
       },
       {
-        "name": "Manipulation",
-        "input": "x.copy()",
-        "output": "return copy of set"
+        "name": "Copy",
+        "input": "x = {1, 3, 5, 7}\nodds = x.copy()\nprint(odds)",
+        "output": "#return copy of set\n{1, 3, 5, 7}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.union(set2)",
-        "output": "return all elements of both sets"
+        "name": "Clear",
+        "input": "x = {1, 3, 5, 7}\nx.clear()\nprint(x)",
+        "output": "#removes everything in set\nset()"
       },
       {
-        "name": "Comparison",
-        "input": "set1.difference(set2)",
-        "output": "return elements only found in set1"
+        "name": "Union",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nprint(set1.union(set2))",
+        "output": "#return all elements of both sets\n{1, 2, 4, 5}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.intersection(set2)",
-        "output": "return elements found in both sets"
+        "name": "Difference",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nprint(set1.difference(set2))",
+        "output": "#return elements only found in set1\n{5}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.symmetric_difference(set2)",
-        "output": "return elements not in both sets"
+        "name": "Intersection",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nprint(set1.intersection(set2))",
+        "output": "#return elements found in both sets\n{1, 2}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.update(set2)",
-        "output": "replaces set1 with all elements of both sets"
+        "name": "Symmetric Difference",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nprint(set1.symmetric_difference(set2))",
+        "output": "#return elements not in both sets\n{4, 5}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.difference_update(set2)",
-        "output": "replaces set1 with elements only found in set1"
+        "name": "Update",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nset1.update(set2)\nprint(set1)\nprint(set2)",
+        "output": "#replaces set1 with all elements of both sets\n{1, 2, 4, 5}\n{1, 2, 4}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.intersection_update(set2)",
-        "output": "replaces set1 with elements found in both sets"
+        "name": "Difference Update",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nset1.difference_update(set2)\nprint(set1)\nprint(set2)",
+        "output": "#replaces set1 with elements found only in set1\n{5}\n{1, 2, 4}"
       },
       {
-        "name": "Comparison",
-        "input": "set1.symmetric_update(set2)",
-        "output": "replaces set1 with elements not found in both sets"
+        "name": "Intersection Update",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nset1.intersection_update(set2)\nprint(set1)\nprint(set2)",
+        "output": "#replaces set1 with elements found in both sets\n{1, 2}\n{1, 2, 4}"
       },
       {
-        "name": "Checks",
-        "input": "set1.isdisjoint(set2)",
-        "output": "return True if null intersections"
+        "name": "Symmetric Difference Update",
+        "input": "set1 = {1, 2, 5}\nset2 = {1, 2, 4}\nset1.symmetric_difference_update(set2)\nprint(set1)\nprint(set2)",
+        "output": "#replaces set1 with elements not found in both sets\n{4, 5}\n{1, 2, 4}"
       },
       {
-        "name": "Checks",
-        "input": "set1.issubset(set2)",
-        "output": "return True if set1 in set2"
+        "name": "Is Disjoint",
+        "input": "set1 = {1, 2}\nset2 = {1, 2, 4}\nset3 = {5}\nprint(set1.isdisjoint(set2))\nprint(set1.isdisjoint(set3))",
+        "output": "#return True if null intersections\nFalse\nTrue"
       },
       {
-        "name": "Checks",
-        "input": "set1.issuperset(set2)",
-        "output": "return True if set1 contains all elements in set2"
+        "name": "Is Subset",
+        "input": "set1 = {1, 2}\nset2 = {1, 2, 4}\nprint(set1.issubset(set2))\nprint(set2.issubset(set1))",
+        "output": "#return True if set1 in set2\nTrue\nFalse"
+      },
+      {
+        "name": "Is Superset",
+        "input": "set1 = {1, 2}\nset2 = {1, 2, 4}\nprint(set1.issuperset(set2))\nprint(set2.issuperset(set1))",
+        "output": "#return True if set1 contains all elements in set2\nFalse\nTrue"
       }
     ]
   }
